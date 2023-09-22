@@ -70,6 +70,8 @@ h1 {
     cursor: pointer;
 }
 .navbtns {
+  background-color: #0e486a;
+    padding: 13px 12px;
     border: none;
     border-radius: 50px;
     background-color: transparent;
@@ -216,6 +218,17 @@ border: none;
   background: rgb(29, 29, 29);  
 }
 
+.gradienonslide {
+  background-image: linear-gradient(to right, rgb(16, 190, 234), rgba(16, 190, 234, 0));
+
+  width: 100px;
+  height: 100px;
+}
+.slide {
+  image-resolution: 10px;
+  
+}
+
 
 
     </style>
@@ -265,19 +278,27 @@ border: none;
         <div class="slideshow-container">
         
         <div class="mySlides fade">
-          <img src="dmitry-zmiy-0Fws0jyIt9s-unsplash.jpg" style="width:100%">
+          <img class="slide" src="dmitry-zmiy-0Fws0jyIt9s-unsplash.jpg" style="width:100%">
+          <div><div class="gradienonslide"></div>
+          <div class="gradienonslide"></div>
+          </div>
           <div class="text">Caption Text</div>
         </div>
         
         <div class="mySlides fade">
-          <img src="fabio-lucas-2AP_-QWxE2A-unsplash.jpg" style="width:100%">
+          <img class="slide" src="fabio-lucas-2AP_-QWxE2A-unsplash.jpg" style="width:100%">
+          <div><div class="gradienonslide"></div>
+          <div class="gradienonslide"></div>
+          </div>
           <div class="text">Caption Two</div>
         </div>
         
         <div class="mySlides fade">
          
-          <img src="thought-catalog-505eectW54k-unsplash.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <img class="slide" src="thought-catalog-505eectW54k-unsplash.jpg" style="width:100%">
+          <div><div class="gradienonslide"></div>
+          <div class="gradienonslide"></div>
+          </div>          <div class="text">Caption Three</div>
         </div>
         
         <a style="text-decoration: none;" class="prev" onclick="plusSlides(-1)">❮</a>
