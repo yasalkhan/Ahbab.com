@@ -36,7 +36,7 @@ body {
 
 .navcontroller {
     position: relative;
-    width: 80%;
+    width: 40%;
 }
 
 .collapse:not(.show) {
@@ -71,8 +71,8 @@ h1 {
     cursor: pointer;
 }
 .navbtns {
-  background-color: #0e486a;
-  padding: 15px 12px;
+  background-color: black;
+  padding: 12px 10px;
     border: none;
     border-radius: 50px;
     /* background-color: transparent; */
@@ -84,7 +84,7 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
     height: 20px;
-    font-size: smaller;
+    font-size: xx-small;
 }
 
 .hilink {
@@ -99,11 +99,17 @@ button {
 .svguprwala {
     position: relative;
  right: 5px !important;
+ height: 12px;
+ width: 12px;
 }
 
 .logo {
     width: 60px;
     height: 60px;
+    position: relative;
+    left: -290px;
+
+
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -113,6 +119,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
+  margin-top: 36px;
    
 }
 
@@ -198,8 +205,25 @@ border: none;
 @media only screen and (min-width: 300px) {
   .prev, .next,.text {font-size: 11px}
  
-
+  
 } 
+
+@media only screen and (max-width: 913px) {
+  .logo {
+    left: -30px;
+}
+
+}
+
+
+@media only screen and (max-width: 413px) {
+  .logo {
+    left: -4px;
+}
+ 
+}
+
+
 @media only screen and (max-width: 279px) {
   .svguprwala {
     height: 9px;
@@ -208,6 +232,7 @@ border: none;
   .logo {
     width: 23px;
     height: 23px;
+    left: -4px;
 }
 
 
@@ -216,14 +241,42 @@ border: none;
     font-size: xx-small;
   }
  
+  
 
 }
 
 
 
+@media only screen and (max-width: 1281px){
+  .postion-stactic {
+  margin-top: -106px;
+
+
+  
+}
+
+.postion-stactic {
+  margin-top: -127px;
+  
+}
+.logo {
+    width: 55px;
+    height: 55px;
+    left: -233px;
+}
+.navcontroller {
+    width: 44%;
+    left: -32px;
+}
+}
+
 @media only screen and (max-width: 619px){
 .navcontroller {
     width: 100%;
+}
+
+.postion-stactic {
+  margin-top: -105px;
 }
 
 .svguprwala {
@@ -233,8 +286,8 @@ border: none;
   .logo {
     width: 25px;
     height: 25px;
+    left: -12px;
 }
-
 
 .navbtns{
     padding: 8px 8px;
@@ -285,19 +338,28 @@ border: none;
   overflow: hidden;
   object-fit: cover;
   background-size: cover;
+  height: 130vh;
   
 }
 
 #Service {
-  width: 10px;
+  width: 100%;
   height: 10px;
 }
 
 .gradientcontroll {
   position: relative;
-  display: flex;
   top: 10px;
   left: 10px;
+}
+
+#Home {
+  overflow: hidden;
+  z-index: 0;
+  height: 113vh;
+  position: relative;
+  width: 100%;
+  
 }
 
     </style>
@@ -349,29 +411,51 @@ border: none;
         
         <div class="mySlides fade">
           <img class="slide" src="dmitry-zmiy-0Fws0jyIt9s-unsplash.jpg" style="width:100%">
-          <div class="gradientcontroll"><div class="gradienonslide"></div>
-          <div class="gradienonslide2"></div>
-          <div class="text">Caption Text</div>
+         
+          <div>
+            <h1></h1>
+            
+            <div>
+              
+              <p></p>
+            <a href=""><button></button></a>
+            
+            </div></div>
         </div>
         
         <div class="mySlides fade">
           <img class="slide" src="marco-lopez-qK6HAkB91Yc-unsplash.jpg" style="width:100%">
-          <div class="gradientcontroll"><div class="gradienonslide"></div>
-          <div class="gradienonslide2"></div>
-          <div class="text">Caption Two</div>
+         
+          <div>
+            <h1></h1>
+            
+            <div>
+              
+              <p></p>
+            <a href=""><button></button></a>
+            
+            </div></div>
+        
+        
         </div>
         
         <div class="mySlides fade">
          
           <img class="slide" src="thought-catalog-505eectW54k-unsplash.jpg" style="width:100%">
-          <div class="gradientcontroll"><div class="gradienonslide"></div>
-          <div class="gradienonslide2"></div>
-          </div>       
+         
+              
           
-          
-          
-          <div class="text">Caption Three</div>
+          <div>
+            <h1></h1>
+            
+            <div>
+              
+              <p></p>
+            <a href=""><button></button></a>
+            
+            </div></div>
         </div>
+        
         
         <div style="text-decoration: none;" class="prev" onclick="plusSlides(-1)">❮</div>
         <div style="text-decoration: none;" class="next" onclick="plusSlides(1)">❯</div>
