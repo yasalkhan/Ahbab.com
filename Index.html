@@ -263,11 +263,23 @@ border: none;
 }
 
 .gradienonslide {
-  background-image: linear-gradient(to right, rgb(16, 190, 234), rgba(16, 190, 234, 0));
-
-  width: 100px;
-  height: 100px;
+  background-image: linear-gradient(to left, rgb(16, 190, 234), rgba(16, 190, 234, 0));
+    width: 440px;
+    height: 396px;
+    
 }
+
+
+.gradienonslide2 {
+  
+  background-image: linear-gradient(to right, rgb(16, 190, 234), rgba(16, 190, 234, 0));
+    width: 440px;
+    height: 396px;
+   
+    
+}
+
+
 .slide {
   image-resolution: 10px;
   overflow: hidden;
@@ -281,6 +293,12 @@ border: none;
   height: 10px;
 }
 
+.gradientcontroll {
+  position: relative;
+  display: flex;
+  top: 10px;
+  left: 10px;
+}
 
     </style>
 </head>
@@ -331,30 +349,32 @@ border: none;
         
         <div class="mySlides fade">
           <img class="slide" src="dmitry-zmiy-0Fws0jyIt9s-unsplash.jpg" style="width:100%">
-          <div><div class="gradienonslide"></div>
-          <div class="gradienonslide"></div>
-          </div>
+          <div class="gradientcontroll"><div class="gradienonslide"></div>
+          <div class="gradienonslide2"></div>
           <div class="text">Caption Text</div>
         </div>
         
         <div class="mySlides fade">
-          <img class="slide" src="fabio-lucas-2AP_-QWxE2A-unsplash.jpg" style="width:100%">
-          <div><div class="gradienonslide"></div>
-          <div class="gradienonslide"></div>
-          </div>
+          <img class="slide" src="marco-lopez-qK6HAkB91Yc-unsplash.jpg" style="width:100%">
+          <div class="gradientcontroll"><div class="gradienonslide"></div>
+          <div class="gradienonslide2"></div>
           <div class="text">Caption Two</div>
         </div>
         
         <div class="mySlides fade">
          
           <img class="slide" src="thought-catalog-505eectW54k-unsplash.jpg" style="width:100%">
-          <div><div class="gradienonslide"></div>
-          <div class="gradienonslide"></div>
-          </div>          <div class="text">Caption Three</div>
+          <div class="gradientcontroll"><div class="gradienonslide"></div>
+          <div class="gradienonslide2"></div>
+          </div>       
+          
+          
+          
+          <div class="text">Caption Three</div>
         </div>
         
-        <a style="text-decoration: none;" class="prev" onclick="plusSlides(-1)">❮</a>
-        <a style="text-decoration: none;" class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-decoration: none;" class="prev" onclick="plusSlides(-1)">❮</div>
+        <div style="text-decoration: none;" class="next" onclick="plusSlides(1)">❯</div>
         
         </div>
 
